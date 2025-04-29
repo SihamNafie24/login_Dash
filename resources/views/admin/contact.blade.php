@@ -1,34 +1,23 @@
-@extends('layouts.admin')
+<!-- contact.blade.php -->
+<div class="container mt-5 mb-5">
+    <div class="card shadow p-4">
+        <div class="card-header bg-primary text-white text-center">
+        <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 
-@section('content')
-<div class="content">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card shadow-sm">
-                <div class="card-header bg-success text-white">
-                    <h3>Contact Us</h3>
-                </div>
-                <div class="card-body">
-                    <form method="POST" action="#">
-                        @csrf
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input id="name" type="text" class="form-control" placeholder="Enter your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input id="email" type="email" class="form-control" placeholder="Enter your email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" class="form-control" rows="4" placeholder="Type your message..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success">Send Message</button>
-                    </form>
-                </div>
-            </div>
+            
         </div>
+       
+        <div class="container">
+    <div class="contact-card">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
 </div>
-@endsection
 
+        

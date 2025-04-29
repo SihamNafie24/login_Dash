@@ -1,0 +1,80 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+}
+
+.contact-card {
+    background: rgb(245, 243, 243);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-card form input,
+.contact-card form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-card form button {
+    width: 100%;
+    padding: 15px;
+    background-color: teal;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-card form button:hover {
+    background-color: #006666;
+}
+
+body {
+    background-image: url('/images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* باش تعمر الشاشة كاملة */
+}
+
+
+
+body {
+    background-image: url('/images/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* باش يغطي الطول كامل */
+}
+
+
+.contact-card {
+    background: rgba(250, 247, 247, 0.7); /* أبيض مع شوية شفافية */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 60px auto;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px); /* تأثير الزجاج */
+    -webkit-backdrop-filter: blur(8px);
+}
+

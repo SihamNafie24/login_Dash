@@ -33,3 +33,10 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
 // If you want About and Contact public (accessible without login), move them outside the group
 // Route::view('/about', 'admin.about')->name('admin.about');
 // Route::view('/contact', 'admin.contact')->name('admin.contact');
+// Page dyal Contact
+Route::get('/contact', function () {
+    return view('admin.contact');
+})->name('contact');
+
+// Submit Form
+Route::post('/contact-submit', [App\Http\Controllers\ContactController::class, 'submit'])->name('contact.submit');
